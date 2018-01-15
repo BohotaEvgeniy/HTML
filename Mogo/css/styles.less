@@ -1,0 +1,1330 @@
+@roboto: 'Roboto', sans-serif;
+@montserrat: 'Montserrat', sans-serif;
+@kaushan: 'Kaushan Script', cursive;
+@grey: #999999;
+@black: #000000;
+@lightCoral: #F38181;
+@riptide: #95e1d3;
+@white: #ffffff;
+@orange: #fce38a;
+
+//BASE FONTS_______________________
+html,
+body {
+	max-width: 1920px;
+	color: @black;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+
+	.container {
+		max-width: 1200px;
+	}
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+//_____________________________________________________HEADER__________
+header {
+	background-image: url('../images/img-banner.jpg');
+	background-size: cover;
+	
+	.logo {
+		text-align: left;
+		h3 {
+			font-family: @montserrat;
+			font-weight: bold;
+			font-size: 2.1429rem;
+			color: @white;
+			margin-top: 28px;
+			text-transform: none;
+			display: block;
+			float: left;
+
+			a {
+				text-decoration: none;
+				font-size: 2.1429rem;
+				color: @white;
+			}
+		}
+	}
+	nav {
+		float: right;
+		margin: 25px 0 170px 20px;
+
+		.button-menu {
+			display: none;
+		}
+
+		ul {
+			.active{
+				position: relative;
+
+				&:after {
+					content: "";
+					position: absolute;
+					height: 4px;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: @orange;				
+				}
+
+				span {
+					display: block;
+					font-size: 1rem;
+					color: @orange;
+					font-family: @montserrat;
+					padding: 15px 0;
+				}
+			}
+			li {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 55px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					display: block;
+					font-size: 1rem;
+					color: @white;
+					font-family: @montserrat;
+					padding: 15px 0;
+					text-decoration: none;
+
+					&:hover {	
+						color: @orange;
+						
+					}	
+				}
+
+			}
+		}
+
+	}
+	.creative {
+		h2 {
+			font-family: @kaushan;
+			font-weight: normal;
+			font-size: 5.1429rem;
+			color: @white;
+			margin-bottom: 40px;
+			text-transform: none;
+			line-height: 0.75;
+		}
+	}
+	.mogo {
+		h1 {
+			font-family: @montserrat;
+			font-weight: bold;
+			line-height: 10rem;
+			font-size: 10.7143rem;
+			color: @white;
+			margin: 0 0 75px 0;
+			padding-bottom: 55px;
+		}
+		.underline-red {
+			position: relative;
+			margin-bottom: 47px;
+			&::after {
+				content: "";
+				position: absolute;
+				height: 5px;
+				right: 48.25%;
+				bottom: 0;
+				left: 48.25%;
+				background-color: @white;
+			}
+		}
+
+		button {
+			border-radius: 0;
+			color: @white;
+			border: 2px solid @white;
+			font-size: 1rem;
+			font-family: @montserrat;
+			margin-bottom: 157px;
+
+			&:hover {
+				background-color: #e88382;
+			}
+		}
+	}
+	
+	.slider {
+		margin: 0 28px 0 0;
+		padding: 27px 0 27px;
+		border: 2px solid @white;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+
+
+		span {
+			font-family: @montserrat;
+			font-size: 1rem;
+			font-weight: bold;
+			color: @white;
+			display: block;
+
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+//_________________________________________________________THE end HEADER______
+
+//------------------------------------------------------SECTION Story about us-----
+section {
+	.container {
+		.row {
+			padding-top: 89px;
+			padding-bottom: 110px;
+
+			h6 {
+				font-family: @kaushan;
+				font-size: 1.7143rem;
+				color: @black;
+				margin-bottom: 1.7143rem;
+				text-transform: none;
+			}
+			p{
+				font-family: @roboto;
+				font-weight: normal;
+				font-size: 1.0714rem;
+				color: @grey;
+				text-transform: none;
+				line-height: 24px;
+				margin-bottom: 100px;
+			}
+			.underline-red {
+				position: relative;
+				margin-bottom: 47px;
+				&::after {
+					content: "";
+					position: absolute;
+					height: 5px;
+					right: 48.25%;
+					bottom: 0;
+					left: 48.25%;
+					background-color: @lightCoral;
+				}
+
+				h4 {
+					font-family: @montserrat;
+					font-weight: bold;
+					font-size: 	2.1429rem;
+					color: @black;
+					padding-bottom: 3rem;
+					line-height: 24px;
+					margin: 0;
+				}	
+			}
+		}
+		.threeImg-block {
+			margin: 0 30px 0 0;
+			img {
+				width: 100%;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+		}
+		.shade {
+			position: relative;
+			
+			.leftTop {
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin-top: -10px;
+				margin-left: -10px;
+			}
+			
+		}
+	}	
+
+}
+
+//______________________________________________________THE end Story about us_____
+
+//------------------------------------------------------SECTION facts-----
+.section-two {
+	background-color: @riptide;
+	.container {
+		.facts {
+			padding: 0;
+			div {
+				padding: 83px 0;
+				height: 270px;
+				width: 20%;
+				margin: 0;
+				border-right: 1px solid @white;
+
+				&:last-child {
+					border: none;
+				}
+				span {
+					display: block;
+					font-family: @montserrat;
+					font-weight: bold;
+					font-size: 5.1429rem;
+					color: @white;
+					line-height: 55px;
+				}
+				.name-block {
+					font-size: 1rem;
+					font-weight: 300;
+					margin-top:22px;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+}
+//______________________________________________________THE end SECTION facts_____
+
+//------------------------------------------------------SECTION Amazing services-----
+.section-three {
+	.container {
+		padding-top: 110px;
+		.row {
+			padding: 0;		
+			img {
+				width: 32px;
+				height: 32px;
+				float: left;
+			}
+		}	
+	}
+}
+//______________________________________________________THE end SECTION Amazing services_____
+
+//------------------------------------------------------SECTION Unique design-----
+.section-four {
+	background-image:url("../images/img-bgFeature.jpg");
+	.container {
+		.row {
+			padding-bottom: 0;
+		}
+		.Iphone {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: 35px;
+			margin-left: 124px;
+		}
+		.distance-padding {
+			padding-top: 0;
+		}
+	}
+}
+//______________________________________________________THE end Unique design _____
+
+//------------------------------------------------------SECTION What we do-----
+.section-five {
+	background-color: @white;
+	.container {
+		padding-bottom: 119px;
+		.distance-padding {
+			padding-top: 0;
+		}
+
+		.row {
+			padding-bottom: 0;
+			.narrow {
+				margin-left: 0;
+				img {
+					width: 100%;
+				}
+				.one-half {
+					margin-left: 30px;
+				}
+
+			} 
+			.name-blog {
+				border: 1px;
+				border-color: @grey;
+				border-style: solid;
+				border-left: none; 
+				border-right:none; 
+				text-align: left;
+				padding: 15px;
+				margin-bottom: 5px;
+
+				img {
+					display: block;
+					float: left;
+				}
+				span {
+					margin-left: 15px;
+					position: absolute;
+					margin-top: 4px;
+					color: @grey;
+				}
+				div {
+					float: inherit;
+					padding: 20px;
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+		
+	}
+}
+//______________________________________________________THE end What we do _____
+
+//------------------------------------------------------ASIDE Jon Doe-----
+aside {
+	background-color: #f8f8f8;
+	.container {
+		.row {
+			padding: 70px 110px;
+			.Speech-block {
+				float: left;
+				padding: 42px 42px 38px;
+				border: 4px solid @riptide;
+				margin-right: 60px;
+			}
+			blockquote {
+				margin: inherit;
+				font-size: 1.7143rem;
+				font-family: @roboto;
+				font-style: italic;
+				text-transform: none;
+				color: @grey;
+				font-weight: normal;
+				text-align: left;
+				
+				div {
+					color: @black;
+					font-family: @kaushan;
+					margin-top: 25px;
+					
+					.line {
+						border: 2px solid @lightCoral; 
+						width: 50px;
+						margin-top: 10px;
+						float: left;
+					}
+				}	
+			}
+		}	
+	}
+}
+//______________________________________________________THE end Jon Doe _____
+
+//------------------------------------------------------SECTION Meet our team-----
+.section-six {
+	background-color: @white;
+	.container {
+		.row {
+			.icons {
+				background-color: grey;
+				height: 56px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -78px;
+				margin-left: -113px;
+				z-index: 100000;
+				
+				.icon {
+					height: 29px;
+					overflow: hidden;
+					padding: 15px 0;
+					background-color: #fce38a;
+				}
+				
+				.icon-f {
+					margin-top: -10px;
+
+					&:hover {
+						margin-top: -69px;	
+						background-color: @lightCoral;	
+						cursor:pointer;				
+					}
+
+				}
+				
+
+			} 
+			span {
+				margin-top: 15px;
+				display: block;
+				font-family: Arial;
+				font-weight: none;
+			}
+			.occupation {
+				margin-top: 5px;
+				font-family: @roboto;
+				color: @grey;
+				font-style: italic;
+			}	
+		}	
+	}
+}
+//______________________________________________________THE end Meet our team _____
+
+//------------------------------------------------------ASIDE Labels-----
+aside {
+	background-color: #f8f8f8;
+	.labels {
+		width: 100%;			
+	}	
+}
+//______________________________________________________THE end labels _____
+
+//------------------------------------------------------SECTION Some of our work-----
+.section-seven {
+	background-color: @white;
+	.container {
+		.row {
+			padding-bottom: 0; 
+		} 		
+	}
+	.imagine {
+		width: 50%;
+		float: left;
+		.img3 {
+			clear: both;
+		}
+		img {
+			width: 50%;
+			float: left;
+		}
+	}
+}
+//______________________________________________________THE end Some of our work _____
+
+//------------------------------------------------------Aside-----
+.aside-two {
+	background-color: @white;
+	.img-woman {
+		float: left;
+		margin-right: 26px;
+	}
+	blockquote {
+		padding-top: 40px;
+	}
+}
+//______________________________________________________THE end Aside _____
+
+//------------------------------------------------------SECTION What people say-----
+.section-eight {
+	background-image:url("../images/bg-what-people.jpg");
+	.container {
+		.row {
+			.column {
+				img {
+					float: left;
+					margin-right: 26px;
+				}
+				
+				span {
+					margin-top: 5px;
+					display: block;
+					text-align: left;
+					margin-bottom: 15px;
+					font-family: @montserrat;
+					font-weight: 500;
+				}
+				.work {
+					color: @grey;
+					margin-top: 0;
+					font-family: @roboto;
+					font-weight: 100;
+					font-style: italic;
+					text-transform: none;
+					margin-bottom: 20px;
+				}
+				.line {
+					border: 2px solid #F38181;
+					width: 50px;
+					margin-top: 10px;
+					float: left;
+					margin: 0;
+					margin-bottom: 25px;
+				}
+				p{
+					text-align: left;
+					clear: both;
+					margin: 0 0 0 135px;
+				}
+			}	
+			&:last-child {
+				padding-bottom: 96px;
+			}
+			.fix {
+				padding: 0;
+			}
+			.fix-instead {
+				margin-bottom: 90px;
+			}
+
+		}	
+	}
+}
+//______________________________________________________THE end What people say _____
+
+//------------------------------------------------------SECTION Latest blog-----
+.section-nine {
+	.row {
+		span {
+			display: block;
+			font-family: @montserrat;
+			color: @black;
+			text-align: left;
+		}
+		.threeImg-block {
+			p {
+				text-align: left;
+				margin: 0;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #e5e5e5;
+				margin-bottom: 20px;
+				color: @grey;
+			}
+			ul {
+				list-style: none;
+				float: left;
+				margin-bottom: 0;
+				
+				li {
+					float: left;
+					font-style: italic;
+					font-weight: 100;
+					color: @grey;
+					font-family: @roboto;
+					margin-bottom: 0;
+				}
+				.pic-see {
+					background: url("../images/see.png") no-repeat 5px;
+					width: 60px;
+					text-align: right;
+					margin-right: 10px;
+				}
+				.pic-comments {
+					background: url("../images/comments.png") no-repeat 5px;
+					text-align: right;
+					padding-left: 31px;
+				}
+			}
+		}	
+		.square {
+			position: absolute;
+			width: 60px;
+			height: 70px;
+			background-color: @riptide;
+			color: @white;
+			margin: -86px 0 0 -10px;
+
+			span {
+				color: @white;
+				font-size: 2rem;
+				font-family: @montserrat;
+				display: block;
+				margin: 15px 15px 0;
+				text-align: center;
+			}
+			.month {
+				font-size: 0.875rem;
+				margin: 0;
+				font-weight: 100;
+				font-style: italic;
+			}
+		}
+	}
+}
+//______________________________________________________THE end Latest blog _____
+
+//------------------------------------------------------MAP-----
+.map {
+	background: url("../images/map.png");
+	.container{
+		padding: 55px 0;
+		span {
+			color: @lightCoral;
+			font-family: @montserrat;
+			font-size: 1.50rem;
+			&:hover {
+				color: @riptide;
+				cursor: pointer;
+			}
+		}
+		.underline-red {
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				height: 5px;
+				top: 35px;
+				right: 48.25%;
+				bottom: 0;
+				left: 48.25%;
+				background-color: @lightCoral;
+			}
+		}
+	}
+}
+//______________________________________________________THE end MAP _____
+
+//------------------------------------------------------FOOTER-----
+footer {
+	background-color: #f8f8f8;
+	.container {
+		padding: 75px 0 50px;
+		text-align: left;
+		font-weight: 100;
+		border-bottom: 1px solid #e5e5e5;
+		.row {
+			.bl-one-groups {
+				text-transform: none;
+				color: #cccccc;
+				font-size: 	1.0714rem;
+				h2 {
+					font-size: 3.2857rem;
+					font-family: @montserrat;
+					font-weight: bold; 
+				}
+				.amount {
+					display: block;
+					font-family: @montserrat;
+					color: @black;
+					font-weight: normal;
+					border-bottom: 1px solid #e5e5e5;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					.count {
+						font-weight: bold;
+						margin-right: 5px;
+					}
+				}
+				.wrap-follow {
+					font-family: @roboto;
+					font-style: italic;
+					margin-bottom: 42px;
+					.follow {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+					img {
+						margin-left: 15px;
+					}
+					.wrap-icons {
+						display: inline-block;
+						padding: 5px 0; 
+					}
+
+				}
+
+			}
+			form {
+				margin: 0;
+				#applicationEmail {
+					width: 213px;
+					height: 40px;
+					border-radius: 1px;
+					/*margin: 0;*/
+				}
+				.applicationButton {
+					width: 150px;
+					color: @white;
+					background-color: @riptide;
+					font-family: @montserrat;
+					font-weight: 600;
+					border-radius: 1px;
+				}
+			}
+			.bl-two-groups {
+				font-family: @montserrat;
+				h6 {
+					margin-bottom: 40px;
+				}
+				aside {
+					img {
+						float: left;
+						margin-right: 20px;
+					}
+					p {
+						margin: 0;
+						padding: 10px 0 5px;
+					}
+					time {
+						font-family: @roboto;
+						color: #c0c0c0;
+						font-weight: normal;
+						font-style: italic;
+						display: inline-block;
+						margin-bottom: 32px;
+					}
+				}
+			}
+			.bl-three-groups {
+				width: 275px;
+				h6 {
+					margin-bottom: 40px;
+				}
+				span {
+					display: block;
+					margin-top: 20px;
+					font-family: @roboto;
+					color: @grey;
+					font-weight: normal;
+					font-style: italic;
+					text-transform: none;
+				}
+			}
+		}
+
+		
+	}
+	
+}
+.inform-site {
+	padding: 20px 0; 
+	p {
+		margin: 0;
+		text-transform: none;
+		font-family: @roboto;
+		span {
+			color: @lightCoral;
+		}
+	}
+}
+//______________________________________________________THE end FOOTER _____
+
+
+@media screen and (max-width: 1199px) {
+	aside {
+		.container {
+			.row {
+				.Speech-block {
+					float: none;
+					margin-right: 0;
+					display: inline-block;
+					margin-bottom: 40px;
+				}
+				blockquote {
+					text-align: center;
+					.wrap-autor {
+						display: inline-block;
+					}
+				}
+
+			}
+		}
+	}
+	.aside-two {
+		.container {
+			.row {
+				.img-woman {
+					float: none;
+					margin-right: 0;
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+				blockquote {
+					text-align: center;
+					.wrap-autor {
+						display: inline-block;
+					}
+				}
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 960px) {
+	header {
+		.mogo {
+			h1 {
+				font-size: 8rem;
+			}
+		}
+	}
+	section {
+		.container {
+			.row {
+				.threeImg-block {
+					width: 100%;
+					float: none;
+					margin: 0 auto;
+					margin-bottom: 40px;
+					img {
+						width: 100%;
+					}
+					.leftTop {
+						top: 347px;
+					}
+				}
+			}	
+		}
+	}
+	.section-nine {
+		.container {
+			.row {
+				ul {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	footer {
+		.bl-one-groups {
+			float: none;
+			display: initial;
+			text-align: center;
+		}
+		.bl-two-groups {
+			float: none;
+			display: initial;
+			margin-bottom: 40px;
+		}
+		.bl-three-groups {
+			margin-left: 30%;
+			text-align: center;
+		}
+
+	}
+
+}
+
+
+@media screen and (max-width: 920px) {
+	aside {
+		.container {
+			.row {
+				.Speech-block {
+					float: none;
+					margin-right: 0;
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+				blockquote {
+					text-align: center;
+					.wrap-autor {
+						display: inline-block;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 890px) {
+	header {
+		.slider {
+			display: none;
+		}
+	}
+
+}
+
+@media screen and (max-width: 780px) {
+	header {
+		.logo {
+			h3 {
+				float: none;
+				a {
+					margin-left: 40%;
+					font-size: 3rem;
+				}
+			}
+			nav {
+				width: 100%;
+				margin-top: 0;
+				margin-left: 0;
+				margin-bottom: 120px;
+				ul {
+					.active {
+						margin-left: 87px;
+					}
+					li {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+		.mogo {
+			h1 {
+				font-size: 7rem;
+			}
+		}
+	}
+	.section-two {
+		display: none;
+	}
+	.section-three {
+		.container {
+			padding-top: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+	header {
+		.logo {
+			h3 {
+				float: left;
+				a {
+					font-size: 3rem;
+					margin-left: 0;
+				}
+			}
+			.button-menu {
+				border: 3px solid @white;
+				width: 40px;
+				padding: 0;
+				margin-right: 30px;
+				div {
+					border: 1px solid @white;
+					margin: 4px; 
+				}
+			}
+			nav {
+				margin-top: 35px;
+				margin-left: 0;
+				margin-right: 20px;
+				margin-bottom: 120px;
+				width: initial;
+				.button-menu {
+					display: block;
+
+				}
+				ul {
+					display: none;
+					.active {
+						margin-left: 87px;
+					}
+					.active {
+						margin-left: 0;
+						margin-bottom: 0;
+						margin-right: 0;
+					}
+					li {
+						display: block;
+						list-style: none;
+						margin-right: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.mogo {
+			h1 {
+				font-size: 7rem;
+			}
+		}
+	}
+	aside {
+		.container {
+			.row {
+				padding-left: 0;
+				padding-right: 0;
+				.Speech-block {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+	.section-two {
+		display: none;
+	}
+	.section-three {
+		.container {
+			padding-top: 0;
+			.row {
+				.column {
+					img {
+						float: none;
+					}
+					span {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.section-five {
+		.container {
+			.row {
+				.narrow {
+					float: none;
+					width: 100%;
+					margin-right: 0;
+				}
+				.column {
+					width: 100%;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.section-eight {
+		.container {
+			.row {
+				.one-half {
+					img,span,div,p {
+						margin: 0;
+						text-align: center;
+						float: none;
+					}
+					.line {
+						float: none;
+						margin: 0 auto;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	.section-seven {
+		.imagine {
+			float: none;
+			width: 100%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 657px) {
+	section {
+		.container {
+			.shade{
+				.leftTop {
+					margin-top: 10px;
+				}
+			}
+		}
+	}			 
+
+}
+
+@media screen and (max-width: 620px) {
+	header {
+		ul {
+			display: none;
+			.active {
+				margin-left: 87px;
+			}
+			li {
+				display: block;
+				list-style: none;
+				margin-right: 30px;
+			}
+		}
+	}
+	.container {
+		.row {
+			.creative {
+				h2 {
+					font-size: 3rem;
+				}
+			}
+			.mogo {
+				h1 {
+					font-size: 5rem;
+				}
+			}
+		}
+	}
+}
+.section-two {
+	display: none;
+}
+.section-three {
+	.container {
+		padding-top: 0;
+	}
+}
+@media screen and (max-width: 550px) {
+	.section-three {
+		.container {
+			padding-top: 0;
+			.row {
+				padding-left: 40px;
+				padding-right: 40px;
+				.column {
+					p {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 520px) {
+	.section-eight {
+		.container {
+			.row {
+				.column {
+					p {
+						margin-bottom: 20px;
+					}
+				}
+				.fix-instead {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	footer {
+		.container {
+			.row {
+				.bl-three-groups {
+					text-align: center;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	header {
+		.container {
+			.row {
+				.mogo {
+					h1 {
+						line-height: 7rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	section {
+		.container {
+			.row {
+				.shade {
+					.leftTop {
+						margin-top: 37px;
+					}
+				}
+			}
+		}
+	}
+}	
+@media screen and (max-width: 438px) {
+	.section-three {
+		.container {
+			.row {
+				.underline-red {
+					h4 {
+						line-height: 3rem;
+					}
+				}	
+			}
+		}
+	}
+}
+@media screen and (max-width: 420px) {
+	section {
+		.container {
+			.row {
+				.shade {
+					.leftTop {
+						margin-top: 36px;
+					}
+				}
+			}
+		}
+	}
+	header {
+		.container {
+			.row {
+				.mogo {
+					h1 {
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 380px) {
+	section {
+		.container {
+			.row {
+				.shade {
+					.leftTop {
+						margin-top: 62px;
+					}
+				}
+			}
+		}
+	}
+	.section-three {
+		.container {
+			.row {
+				.underline-red {
+					h4 {
+						line-height: 3rem;
+					}
+				}	
+			}
+		}
+	}
+	.section-seven {
+		.container {
+			.row {
+				.underline-red {
+					h4 {
+						line-height: 3rem;
+					}
+				}
+			}
+		}
+	}
+	.section-eight {
+		.container {
+			.row {
+				.underline-red {
+					h4 {
+						line-height: 3rem;
+					}
+				}
+			}
+		}
+	}
+	header {
+		.container {
+			.row {
+				.mogo {
+					h1 {
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	h4 {
+		line-height: 3rem;
+	}
+}
+
+
+
+
